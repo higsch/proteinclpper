@@ -1,0 +1,461 @@
+/*
+Cascading style sheet for Protein|Clpper
+Matthias Stahl, TU Muenchen
+Version 0.1
+December 2014
+*/
+
+
+/* General HTML tags */
+/* ----------------------------------------------------------------------- */
+
+a {
+    text-decoration: none;
+	color: #222;
+	border-bottom: 2px solid #fff;
+}
+
+a:hover {
+	border-bottom: 2px solid #af0000;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+/* Color tags */
+/* ----------------------------------------------------------------------- */
+
+.red {
+	color: #af0000;
+}
+
+.orange {
+	color: #b16d00;
+}
+
+.green {
+	color: #00872c;
+}
+
+
+/* Header */
+/* ----------------------------------------------------------------------- */
+
+#header {
+	width: auto;
+	min-width: 1000px;
+	height: 350px;
+	background: #fff url(images/bg.jpg) no-repeat 0px -65px;
+}
+
+#header_bow {
+	width: auto;
+	height: 350px;
+	background: url(images/bow.png) no-repeat center 195px;
+}
+
+#header_content {
+	width: 1000px;
+	height: 350px;
+	margin: 0 auto 0 auto;
+}
+
+#header_content #title_box {
+	width: 400px;
+	margin: 70px 0 0 10px;
+	float: left;
+}
+
+#header_content #title_box h1 {
+	font-family: "Georgia", sans-serif;
+	font-size: 3em;
+}
+
+#header_content h3.title {
+	width: 450px;
+	margin: 10px 0 0 200px;
+	font-family: "Georgia", sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+/* Wrapping tags */
+/* ----------------------------------------------------------------------- */
+
+#wrapper {
+	width: 960px;
+	margin: -65px auto 0 auto;
+}
+
+#main {
+	width: 960px;
+	min-height: 380px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+
+}
+
+
+/* Main navigation */
+/* ----------------------------------------------------------------------- */
+
+#navigation {
+	width: 920px;
+	height: auto;
+	padding: 10px 10px 10px;
+	display: table;
+}
+
+#navigation ul {
+}
+
+#navigation ul li {
+	text-align: center;
+	display: table-cell;
+}
+
+#navigation ul li.active a {
+	color: #af0000;
+}
+
+#navigation ul li a {
+	height: 20px;
+	padding: 0 10px;
+	color: #333;
+	font-family: "Arial", sans-serif;
+	font-size: 1.3em;
+	text-decoration: none;
+	display: block;
+}
+
+
+/* Content */
+/* ----------------------------------------------------------------------- */
+
+#content {
+	width: auto;
+	padding: 20px 20px;
+	font-family: "Arial", sans-serif;
+}
+
+#content h2 {
+	margin-bottom: 10px;
+	font-family: "Georgia", sans-serif;
+	font-size: 1.8em;
+}
+
+#content h3 {
+	margin-top: 30px;
+	margin-bottom: 7px;
+	font-family: "Georgia", sans-serif;
+	font-size: 1.2em;
+	color: #222;
+}
+
+#content h4 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	font-family: "Georgia", sans-serif;
+	font-style: italic;
+	font-size: 1.0em;
+	color: #222;
+}
+
+#content p {
+	font-size: 0.9em;
+	line-height: 1.3em;
+	color: #333;
+}
+
+#content table {
+	color: #333;
+}
+
+#content ul {
+	padding-left: 10px;
+	font-size: 0.9em;
+	color: #333;
+}
+
+#content ul li {
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+#content ol {
+	padding-left: 10px;
+	font-size: 0.9em;
+	list-style-type: decimal;
+	color: #333;
+}
+
+#content ol li {
+	margin-top: 7px;
+	margin-bottom: 7px;
+	margin-left: 20px;
+}
+
+#content table.set_data_path_upload {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 0.95em;
+	border: none;
+}
+
+#content table.set_data_path_upload tbody tr td {
+	min-width: 130px;
+	padding: 4px;
+}
+
+#content table#set_data_path_set_files {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 0.95em;
+	border: none;
+}
+
+#content table#set_data_path_set_files tbody tr td {
+	min-width: 120px;
+	padding: 4px;
+}
+
+#content table#results_overview_very_general {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 0.95em;
+	border: none;
+}
+
+#content table#results_overview_very_general tbody tr td {
+	min-width: 120px;
+	padding: 4px;
+}
+
+#content table#results_overview_general_information {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 0.95em;
+}
+
+#content table#results_overview_general_information thead tr td {
+	min-width: 120px;
+	padding: 4px;
+	font-style: italic;
+	background: #aad9fd;
+	border: 1px solid #888;
+}
+
+#content table#results_overview_general_information tbody tr td {
+	padding: 4px;
+	border: 1px solid #888;
+}
+
+#content table.results_overview_information_to_single_proteins {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 0.95em;
+}
+
+#content table.results_overview_information_to_single_proteins thead tr td {
+	min-width: 120px;
+	padding: 4px;
+	font-style: italic;
+	background: #aad9fd;
+	border: 1px solid #888;
+}
+
+#content table.results_overview_information_to_single_proteins tbody tr td {
+	padding: 4px;
+	border: 1px solid #888;
+}
+
+#content table#proteins_in_data_options_table {
+	margin: 10px 0 10px 0;
+}
+
+#content table#proteins_in_data_options_table tr td {
+	padding: 4px;
+	font-size: 0.95em;
+}
+
+#content img#logo {
+    width: 500px;
+    display: block;
+}
+
+#citation {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+
+/* Upload form */
+/* ----------------------------------------------------------------------- */
+
+form#file_upload input[type=submit].normal_button {
+	width: 190px;
+}
+
+form#file_upload input.highlighted_button {
+	font-size: 1.2em;
+}
+
+
+/* Download form */
+/* ----------------------------------------------------------------------- */
+
+form#download_list input[type=submit].download_button {
+	width: 190px;
+	margin: auto 5px auto 5px;
+}
+
+
+/* Selection lists */
+/* ----------------------------------------------------------------------- */
+
+ul#score_type, ul#pga_list, ul#score_type_seq_coverage {
+	margin-bottom: 10px;
+}
+
+ul#score_type li, ul#score_type_seq_coverage li {
+	width: 140px;
+	margin: 5px 10px;
+	padding: 5px;
+	display: table-cell;
+	text-align: center;
+	border-radius: 4px;
+}
+
+ul#score_type li:hover, ul#score_type_seq_coverage li:hover {
+	background: #ff944d;
+}
+
+ul#score_type li.active:hover, ul#score_type_seq_coverage li.active:hover {
+	background: #ff944d;
+}
+
+ul#score_type li a, ul#score_type_seq_coverage li a {
+	width: 100%;
+	color: #000;
+	text-decoration: none;
+	display: block;
+	border: none;
+}
+
+ul#score_type li.active, ul#score_type_seq_coverage li.active {
+	background: #ffb98b;
+}
+
+ul#pga_list li {
+	width: 140px;
+	margin: 5px 10px;
+	padding: 5px;
+	display: table-cell;
+	text-align: center;
+	border-radius: 4px;
+}
+
+ul#pga_list li:hover {
+	background: #eb5f5f;
+}
+
+ul#pga_list li.active:hover {
+	background: #eb5f5f;
+}
+
+ul#pga_list li a {
+	width: 100%;
+	color: #000;
+	text-decoration: none;
+	display: block;
+	border: none;
+}
+
+ul#pga_list li.active {
+	background: #fa9797;
+}
+
+
+/* Charts */
+/* ----------------------------------------------------------------------- */
+
+#charts div {
+	width: 700px;
+	height: 300px;
+	/*float: left;*/
+}
+
+a.canvasjs-chart-credit {
+	visibility: hidden;
+}
+
+
+/* Weblogo stuff */
+/* ----------------------------------------------------------------------- */
+
+#weblogo_image {
+	margin: 5px 0 0 0;
+}
+
+img#weblogo_img {
+	width: 400px;
+}
+
+object#weblogo_svg svg {
+	width: 800px;
+	height: 600px;
+}
+
+#content table#weblogo_options_table {
+	margin-bottom: 20px;
+}
+
+#content table#weblogo_options_table tr td {
+	padding: 4px;
+	font-size: 0.95em;
+}
+
+#content table#weblogo_options_table select#unit_name {
+	width: 100px;
+	text-align: right;
+}
+
+#content table#weblogo_options_table input#yaxis_scale {
+	width: 20px;
+	text-align: right;
+}
+
+
+/* Footer tags */
+/* ----------------------------------------------------------------------- */
+
+#footer {
+	width: auto;
+	min-width: 1000px;
+	height: 450px;
+	background: url(images/bg.jpg) no-repeat 0px -250px;
+	clear: both;
+}
+
+#footer_bow {
+	width: auto;
+	height: 350px;
+	background: url(images/bow_inverse.png) no-repeat -700px -271px;
+}
+
+#footer_content {
+	width: 200px;
+	font-family: "Georgia", sans-serif;
+	position: relative;
+	top: 350px;
+	left: 380px;
+}
