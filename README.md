@@ -6,3 +6,6 @@ ACS Chemical Biology, (<a href="http://dx.doi.org/10.1021/acschembio.5b00757">do
 
 The repository contains a PDF manual.
 Cave: Please only use the 'normal' representation of cleavage sites, not the 'weighted' or 'unique' peptides one.
+
+## Installation
+Serve these files with a (local) webserver such as [XAMPP](https://www.apachefriends.org/de/index.html) or [MAMP](https://www.mamp.info/de/) and follow the instructions in the [user manual](https://www.department.ch.tum.de/fileadmin/w00bzu/oc2/Bioinformatics/ProteinClpper_User_guide_v1.1.pdf).
